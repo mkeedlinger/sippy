@@ -244,6 +244,7 @@ function configure (a) {
     template('app.js', a);
     template('gulpfile.js', a);
     template('html/index.html', a);
+    template('config.js', a);
 
     l.info('Please wait...');
     getNpmVersion(depends, function (ver) {
