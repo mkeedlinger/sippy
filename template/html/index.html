@@ -1,0 +1,15 @@
+<% if (!swig) { %><!DOCTYPE html>
+<html>
+<head>
+    <title>Test page</title>
+</head>
+<body>
+    <h1>Hello there!</h1>
+    <h3>Have fun making {{ name }} with Sippy!</h3>
+</body>
+</html><% } else { %>{% extends 'layouts/main' %}
+{% block title %}Test page{% endblock title %}
+{% block body %}
+<h1>Hello there!</h1>
+<h3>Have fun making {{ name }} with Sippy!</h3>
+{% endblock body %}<% } %>
